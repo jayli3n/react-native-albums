@@ -1,2 +1,2 @@
 # react-native-albums
-simple mobile app
+simple mobile app for IOS + Android
