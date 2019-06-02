@@ -29,7 +29,7 @@ const AlbumDetail = (props) => {
 			</CardSection>
 
 			<CardSection>
-				<Button text='Click Me!' onPress={() => openUrl(url)} />
+				<Button text='Buy Now' onPress={() => openUrl(url)} />
 			</CardSection>
 		</Card>
 	);
@@ -61,6 +61,7 @@ const styles = {
 		width: null,
 		marginLeft: 5,
 		marginRight: 5,
+		borderRadius: 3,
 	}
 };
 
