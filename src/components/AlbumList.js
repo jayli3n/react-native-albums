@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 import axios from 'axios';
+import AlbumDetail from './AlbumDetail';
 
 const API = 'https://rallycoding.herokuapp.com/api/music_albums';
 
@@ -24,15 +25,8 @@ class AlbumList extends Component {
 		return (
 			<View>
 				{this.state.albums.map((album, i) => {
-					const { title, artist, url, image, thumbnail_image } = album;
 					return (
-						<View key={i}>
-							<Text>{title}</Text>
-							<Text>{artist}</Text>
-							<Text>{url}</Text>
-							<Text>{image}</Text>
-							<Text>{thumbnail_image}</Text>
-						</View>
+						<AlbumDetail key={i} album={album} />
 					);
 				})}
 			</View>
