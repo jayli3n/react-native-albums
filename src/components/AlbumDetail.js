@@ -2,6 +2,7 @@ import React from 'react';
 import { Text, View, Image } from 'react-native';
 import Card from './Card';
 import CardSection from './CardSection';
+import Button from './Button';
 
 const AlbumDetail = (props) => {
 	const { headerContentStyle, thumbnailStyle, thumbnailContainerStyle, headerTextStyle, albumCoverStyle } = styles;
@@ -24,7 +25,7 @@ const AlbumDetail = (props) => {
 			</CardSection>
 
 			<CardSection>
-				<Text>{url}</Text>
+				<Button text='Click Me!' link={url} />
 			</CardSection>
 		</Card>
 	);
@@ -54,6 +55,8 @@ const styles = {
 		flex: 1,
 		height: 300,
 		width: null,
+		marginLeft: 5,
+		marginRight: 5,
 	}
 };
 
