@@ -24,7 +24,7 @@ const styles = {
 		shadowRadius: 2,
 
 		elevation: 5,
-		margin:5,
+		margin:10,
 	}
 };
 
